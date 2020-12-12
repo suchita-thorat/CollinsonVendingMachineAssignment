@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="84" started-at="2020-12-10T20:30:55 GMT" finished-at="2020-12-10T20:30:55 GMT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="84" started-at="2020-12-10T20:30:55 GMT" finished-at="2020-12-10T20:30:55 GMT">
+      <class name="Collinson.VendingMachineProgram.VendingMachineTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Collinson.VendingMachineProgram.VendingMachineTest@a7e666]" name="setUp" is-config="true" duration-ms="13" started-at="2020-12-10T20:30:55 GMT" finished-at="2020-12-10T20:30:55 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testBuyItemWithExactPrice()[pri:1, instance:Collinson.VendingMachineProgram.VendingMachineTest@a7e666]" name="testBuyItemWithExactPrice" duration-ms="10" started-at="2020-12-10T20:30:55 GMT" finished-at="2020-12-10T20:30:55 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyItemWithExactPrice -->
+        <test-method status="PASS" signature="testBuyItemWithMorePrice()[pri:2, instance:Collinson.VendingMachineProgram.VendingMachineTest@a7e666]" name="testBuyItemWithMorePrice" duration-ms="2" started-at="2020-12-10T20:30:55 GMT" finished-at="2020-12-10T20:30:55 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyItemWithMorePrice -->
+        <test-method status="PASS" signature="testRefund()[pri:3, instance:Collinson.VendingMachineProgram.VendingMachineTest@a7e666]" name="testRefund" duration-ms="1" started-at="2020-12-10T20:30:55 GMT" finished-at="2020-12-10T20:30:55 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRefund -->
+        <test-method status="PASS" signature="testBuyItemWithLessPrice()[pri:4, instance:Collinson.VendingMachineProgram.VendingMachineTest@a7e666]" name="testBuyItemWithLessPrice" duration-ms="2" started-at="2020-12-10T20:30:55 GMT" finished-at="2020-12-10T20:30:55 GMT">
+          <exception class="Collinson.VendingMachineProgram.NotFullPaidException">
+            <message>
+              <![CDATA[Price not full paid, remaining : 10]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[Collinson.VendingMachineProgram.NotFullPaidException: Price not full paid, remaining : 10
+at Collinson.VendingMachineProgram.VendingMachineImpl.collectItem(VendingMachineImpl.java:72)
+at Collinson.VendingMachineProgram.VendingMachineImpl.collectItemAndChange(VendingMachineImpl.java:53)
+at Collinson.VendingMachineProgram.VendingMachineTest.testBuyItemWithLessPrice(VendingMachineTest.java:87)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- Collinson.VendingMachineProgram.NotFullPaidException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyItemWithLessPrice -->
+        <test-method status="PASS" signature="testSoldOut()[pri:5, instance:Collinson.VendingMachineProgram.VendingMachineTest@a7e666]" name="testSoldOut" duration-ms="2" started-at="2020-12-10T20:30:55 GMT" finished-at="2020-12-10T20:30:55 GMT">
+          <exception class="Collinson.VendingMachineProgram.SoldOutException">
+            <message>
+              <![CDATA[Sold Out, Please buy another item]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[Collinson.VendingMachineProgram.SoldOutException: Sold Out, Please buy another item
+at Collinson.VendingMachineProgram.VendingMachineImpl.selectItemAndGetPrice(VendingMachineImpl.java:42)
+at Collinson.VendingMachineProgram.VendingMachineTest.testSoldOut(VendingMachineTest.java:93)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- Collinson.VendingMachineProgram.SoldOutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSoldOut -->
+        <test-method status="PASS" signature="testNotSufficientChangeException()[pri:6, instance:Collinson.VendingMachineProgram.VendingMachineTest@a7e666]" name="testNotSufficientChangeException" duration-ms="1" started-at="2020-12-10T20:30:55 GMT" finished-at="2020-12-10T20:30:55 GMT">
+          <exception class="Collinson.VendingMachineProgram.NotSufficientChangeException">
+            <message>
+              <![CDATA[Not Sufficient change in Inventory]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[Collinson.VendingMachineProgram.NotSufficientChangeException: Not Sufficient change in Inventory
+at Collinson.VendingMachineProgram.VendingMachineImpl.collectItem(VendingMachineImpl.java:68)
+at Collinson.VendingMachineProgram.VendingMachineImpl.collectItemAndChange(VendingMachineImpl.java:53)
+at Collinson.VendingMachineProgram.VendingMachineTest.testNotSufficientChangeException(VendingMachineTest.java:109)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- Collinson.VendingMachineProgram.NotSufficientChangeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNotSufficientChangeException -->
+        <test-method status="PASS" signature="testReset()[pri:7, instance:Collinson.VendingMachineProgram.VendingMachineTest@a7e666]" name="testReset" duration-ms="2" started-at="2020-12-10T20:30:55 GMT" finished-at="2020-12-10T20:30:55 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReset -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Collinson.VendingMachineProgram.VendingMachineTest@a7e666]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-12-10T20:30:55 GMT" finished-at="2020-12-10T20:30:55 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Collinson.VendingMachineProgram.VendingMachineTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
