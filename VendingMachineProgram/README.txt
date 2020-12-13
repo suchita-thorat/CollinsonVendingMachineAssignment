@@ -7,7 +7,7 @@ like /VendingMachineProgram/src/main/java/Collinson/VendingMachineProgram
 3. Now Run below command for compiling
 javac -Xlint:unchecked *.java 
 e.g. C:\Users\Suchita.Thorat\git\CollinsonVendingMachineAssignment\VendingMachineProgram\src\main\java\Collinson\VendingMachineProgram>javac -Xlint:unchecked *.java
-4. Now move up in path at folder level 
+4. Now move up at folder level 
 \VendingMachineProgram\src\main\java
 Now run the program using below command(including package name)-
 java Collinson.VendingMachineProgram.RunVendingMachineProgram

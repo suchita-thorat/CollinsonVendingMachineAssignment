@@ -101,14 +101,14 @@ public class VendingMachineImpl implements VendingMachine {
 
       
     private List<Coin> getChange(long amount) throws NotSufficientChangeException{
-        List<Coin> changes = Collections.EMPTY_LIST;
+        List<Coin> changes = Collections.emptyList();
         int CHANGE_PENNY = 0;
         int CHANGE_NICKEL = 0;
         int CHANGE_DIME = 0;
         int CHANGE_QUARTER = 0;
 
         if(amount > 0){
-            changes = new ArrayList<Coin>();
+        	changes = new ArrayList<Coin>();
             long balance = amount;
             while(balance > 0){
                 if(balance >= Coin.QUARTER.getDenomination() 
