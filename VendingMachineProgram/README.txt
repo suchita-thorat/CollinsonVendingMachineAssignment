@@ -1,5 +1,12 @@
 
 Program:
+Execute program using jar:
+1. Download project from Github
+2. Open Command prompt --> Go to path of jar file (inculded in root folder CollinsonVendingMachineAssignment/VendingMachineProgram/)
+e.g. C:\Users\Suchita.Thorat\git\CollinsonVendingMachineAssignment\VendingMachineProgram>
+3. Run main class using jar
+java -cp VendingMachine.jar Collinson.VendingMachineProgram.RunVendingMachineProgram
+-------------
 Steps to execute Program (from command line) -
 1. Download project from Github
 2. Go to command prompt --> then path of VendingMachineProgram (till inside the package)
@@ -13,17 +20,12 @@ Now run the program using below command(including package name)-
 java Collinson.VendingMachineProgram.RunVendingMachineProgram
 e.g C:\Users\Suchita.Thorat\git\CollinsonVendingMachineAssignment\VendingMachineProgram\src\main\java>java Collinson.VendingMachineProgram.RunVendingMachineProgram
 -------------
-Execute program using jar:
-1. Open Command prompt --> Go to path of jar file
-2. Run below command to run main class using jar
-java -cp VendingMachine.jar Collinson.VendingMachineProgram.RunVendingMachineProgram
--------------
 Program execution from IDE-
-Choose RunVendingMachineProgram.java file from project structure --> Run as --> Java application
+Select RunVendingMachineProgram.java file from project structure --> Run as --> Java application
 
-Please note:Main method currently executes just few hard coded functionalities (just to show sample run using main method), 
+*****Please note:*****Main method currently executes just few hard coded functionalities (just to show sample run using main method), 
 if needed it can be changed to accept inputs from user/file and using Scanner class to read the input (as per requirements)
-Program's each functionality validated in Unit Tests written separately.
+Program's each functionality validated in Unit Tests separately.
  
 Program Assumptions:
    - Vending Machine is single-threaded, only one user will operate at a time.
