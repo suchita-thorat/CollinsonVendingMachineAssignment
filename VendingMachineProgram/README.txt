@@ -29,7 +29,7 @@ Steps to execute Tests (as Maven test from command line) -
 1. Download project from Github
 2. Go to command prompt --> then path of VendingMachineProgram (root folder)
 3. mvn test
-e.g. C:\Users\Suchita.Thorat\eclipse-workspace\VendingMachineProgram>mvn test
+e.g. C:\Users\Suchita.Thorat\git\CollinsonVendingMachineAssignment\VendingMachineProgram>mvn test
 ----
 Tests run from IDE 
 run as TestNG suite using testng.xml
