@@ -4,10 +4,10 @@ Execute program using jar:
 1. Download project from Github
 2. Open Command prompt --> Go to path of jar file (inculded in root folder CollinsonVendingMachineAssignment/VendingMachineProgram/)
 e.g. C:\Users\Suchita.Thorat\git\CollinsonVendingMachineAssignment\VendingMachineProgram>
-3. Run main class using jar
+3. Run main class using jar (specifying main class including package)
 java -cp VendingMachine.jar Collinson.VendingMachineProgram.RunVendingMachineProgram
 -------------
-Steps to execute Program (from command line) -
+Steps to execute Program directly (from command line) -
 1. Download project from Github
 2. Go to command prompt --> then path of VendingMachineProgram (till inside the package)
 like /VendingMachineProgram/src/main/java/Collinson/VendingMachineProgram
