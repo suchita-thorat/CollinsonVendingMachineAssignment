@@ -1,7 +1,7 @@
 package Collinson.VendingMachineProgram;
 
 //Vending Machine throws this exception to indicate that it doesn't have sufficient change to complete this request
-	
+
 public class NotSufficientChangeException extends RuntimeException {
 	private String message;
 

@@ -15,6 +15,6 @@ public interface VendingMachine {
 	public Bucket<Item, List<Coin>> collectItemAndChange();
 
 	public int reset();
-	
+
 	public void printStats();
 }
