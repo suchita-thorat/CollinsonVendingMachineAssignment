@@ -87,6 +87,7 @@ public class VendingMachineTest {
 		vm.collectItemAndChange();
 	}
 
+	//Validating for sold out item
 	@Test(priority = 5, expectedExceptions = { SoldOutException.class })
 	public void testSoldOut() {
 		for (int i = 0; i < 5; i++) {
@@ -114,6 +115,7 @@ public class VendingMachineTest {
 	@Test(priority=7)
 	public void testReset() {
 		int pepsiQuantity= vm.reset();
+		//Assertion for random item from the inventory
 		assertEquals(5,pepsiQuantity);
 	}
 }

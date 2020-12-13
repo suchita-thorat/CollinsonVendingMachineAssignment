@@ -106,7 +106,6 @@ public class VendingMachineImpl implements VendingMachine {
         int CHANGE_NICKEL = 0;
         int CHANGE_DIME = 0;
         int CHANGE_QUARTER = 0;
-        int CHANGE_DOLLAR = 0;
 
         if(amount > 0){
             changes = new ArrayList<Coin>();
